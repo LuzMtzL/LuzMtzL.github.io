@@ -1,148 +1,361 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>Homepage - Luz Martinez-Lucas</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="images/logo_yellow_sq.png">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<body class="w3-content" style="max-width:1300px">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
 
-<!-- First Grid: Logo & About -->
-<div class="w3-row">
-  <div class="w3-half w3-black w3-container w3-center" style="min-height:780px" id="home">
-    <div class="w3-padding-64">
-      <h1><b>Luz Martinez-Lucas</b></h1>
-      <h2>Electrical Engineering Master Student</h2>
-      <h3>The University of Texas at Dallas</h3>
-    </div>
-    <div class="w3-padding-64">
-      <a href="#about" class="w3-button w3-black w3-block w3-hover-white w3-padding-16">About Me</a>
-      <a href="#work" class="w3-button w3-black w3-block w3-hover-light-grey w3-padding-16">Publications</a>
-      <a href="#resume" class="w3-button w3-black w3-block w3-hover-grey w3-padding-16">Resume</a>
-      <a href="#proj" class="w3-button w3-deep-black w3-block w3-hover-dark-grey w3-padding-16">Projects</a>
-      <a href="#contact" class="w3-button w3-deep-black w3-block w3-hover-black w3-hover-text-grey w3-padding-16">Contact Me</a>
-    </div>
-  </div>
-  <div class="w3-half w3-white w3-container" style="min-height:780px" id="about">
-    <div class="w3-padding-64 w3-center">
-      <h1><b>About Me</b></h1>
-      <img src="me_2.JPG" class="w3-margin w3-circle" alt="Person" style="width:50%">
-      <div class="w3-left-align w3-padding-large">
-        <p>Hello, my name is Luz Martinez-Lucas and I am an Electrical Engineering Master student at the University of Texas at Dallas.</p>
-        <p>My research interests include: Speech Emotion Recognition, Speaker Recognition, Machine Learning, Conversational Speech, and Speech Data Collection.</p>
-      </div>
-      <a href="#home" class="w3-button w3-white w3-block w3-hover-white w3-hover-text-grey w3-padding-16"><i class="fa fa-home w3-xlarge"></i></a>
-    </div>
-  </div>
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right"><img src="images/logo_yellow.svg" style="width:25px"></span>
 </div>
 
-<!-- Second Grid: Work & Resume -->
-<div class="w3-row">
-  <div class="w3-half w3-light-grey w3-container" style="min-height:900px" id="work">
-    <div class="w3-padding-64 w3-center w3-text-deep-orange">
-      <h1><b>Publications</b></h1>
-	<div class="w3-padding-64 w3-left-align w3-text-deep-orange">
-	<h2>Journal Articles</h2>
-	  <div class="w3-padding-large w3-text-black">
-      	    <p>L. Martinez-Lucas, W. Lin, and C. Busso, “Analyzing continuous-time and sentence-level annotations for speech emotion recognition,” <i>IEEE Transactions on Affective Computing</i>, vol. submitted, 2021.</p>
-	  </div>
-	</div>
-	<div class="w3-padding-64 w3-left-align w3-text-deep-orange">
-	<h2>Conference Proceedings</h2>
-	  <div class="w3-padding-large w3-text-black">
-      	    <p>L. Martinez-Lucas, M. Abdelwahab, and C. Busso, “The MSP-conversation corpus,” in <i>Interspeech 2020</i>, Shanghai, China, October 2020, pp. 1823–1827. <a href="http://www.interspeech2020.org/index.php?m=content&c=index&a=show&catid=290&id=684" target="_blank">Paper</a> <a href="https://www.youtube.com/watch?v=ABVG4rXQg1k" target="_blank">Highlight Video</a> <a href="https://www.youtube.com/watch?v=73YLeButw3I" target="_blank">Presentation Video</a></p>
-	  </div>
-	</div>
-      <a href="#home" class="w3-button w3-light-grey w3-block w3-hover-light-grey w3-hover-text-grey w3-padding-16"><i class="fa fa-home w3-xlarge"></i></a>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="images/me_3.JPG" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span><strong >Luz</strong> Martinez-Lucas</span><br>
+      <a href="https://github.com/LuzMtzL" target="_blank" class="w3-padding-small" title="GitHub Page"><i class="fa fa-github-square"></i></a>  
+      <a href="https://www.youtube.com/channel/UCs1CSxxb3iEaY_acNY_cHzQ" target="_blank" class="w3-padding-small" title="YouTube Page"><i class="fa fa-youtube-square"></i></a>  
+      <a href="https://twitter.com/luzmamtzl3" target="_blank" class="w3-padding-small" title="Twitter Page"><i class="fa fa-twitter-square"></i></a>  
+      <a href="https://www.linkedin.com/in/luz-martinez-lucas-a16746196/" target="_blank" class="w3-padding-small" title="LinkedIn Page"><i class="fa fa-linkedin-square"></i></a>
+      <a href="https://www.instagram.com/lmlucas3/" target="_blank" class="w3-padding-small" title="Instagram Page"><i class="fa fa-instagram"></i></a>  
     </div>
   </div>
-  <div class="w3-half w3-grey w3-container" style="min-height:900px" id="resume">
-    <div class="w3-padding-64 w3-center">
-      <h2><b>Resume</b></h2>
-      <div class="w3-container w3-responsive">
-        <table class="w3-table">
-          <tr>
-            <th>Date</th>
-            <th>Event/Position</th>
-            <th>Where</th>
-          </tr>
-	  <tr class="w3-white">
-            <td>Expected May 2023</td>
-            <td>Master of Science in Electrical Engineering, Signals and Systems Concentration</td>
-            <td>The University of Texas at Dallas, Richardson, TX</td>
-          </tr>
-	  <tr>
-            <td>May 2018–Present</td>
-            <td>Machine Learning Researcher at the Multimodal Signal Processing (MSP) Laboratory</td>
-            <td>Laboratory at the University of Texas at Dallas</td>
-          </tr>
-	  <tr class="w3-white">
-            <td>May 2021</td>
-            <td>Bachelor of Science in Electrical Engineering, 3.99/4.00, Graduated Summa Cum Laude</td>
-            <td>The University of Texas at Dallas, Richardson, TX</td>
-          </tr>
-	  <tr>
-            <td>Apr 2021</td>
-            <td>Jonsson School Undergraduate Research Award</td>
-            <td>The University of Texas at Dallas</td>
-          </tr>
-	  <tr class="w3-white">
-            <td>Apr 2020</td>
-            <td>Undergraduate Research Scholar Award</td>
-            <td>The University of Texas at Dallas</td>
-          </tr>
-	  <tr>
-            <td>Sep 2019</td>
-            <td>Workshop for Young Female Researchers in Speech Science & Technology</td>
-            <td>Interspeech 2019 in Graz, Austria</td>
-          </tr>
-	  <!--<tr class="w3-white">
-            <td>May 2017 – Aug 2018</td>
-            <td>Swim Instructor and Lifeguard</td>
-            <td>Emler Swim School of Firewheel, Sachse, TX</td>
-          </tr>
-          <tr>
-            <td>Jun 2017</td>
-            <td>High School Diploma, Received International Baccalaureate (IB) Diploma</td>
-            <td>Garland High School, Garland, TX</td>
-          </tr>-->
-        </table>
-        <a href="#home" class="w3-button w3-grey w3-block w3-hover-grey w3-hover-text-grey w3-padding-16"><i class="fa fa-home w3-xlarge"></i></a>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>&nbsp Close Menu</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue" onclick="openSection('about')" title="Open About Me"><i class="fa fa-user fa-fw"></i>&nbsp About Me</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding" onclick="openSection('publications')" title="Open Publications"><i class="fa fa-book fa-fw"></i>&nbsp Publications</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding" onclick="openSection('timeline')" title="Open Timeline"><i class="fa fa-history fa-fw"></i>&nbsp Timeline</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding" onclick="openSection('projects')" title="Open Projects"><i class="fa fa-cubes fa-fw"></i>&nbsp Projects</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding" onclick="openSection('courses')" title="Open Courses"><i class="fa fa-graduation-cap fa-fw"></i>&nbsp Courses</a>
+    <a href="https://drive.google.com/file/d/17dMF7dGCJqZrvK0f8wjo8S4G4jGZjinv/view?usp=sharing" class="w3-bar-item w3-button w3-padding" title="Open Resume"><i class="fa fa-list fa-fw"></i>&nbsp Resume</a>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !ABOUT PAGE CONTENT! -->
+<div id="about" class="Section" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-user fa-fw"></i>&nbsp About Me</b></h5>
+  </header>
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div href="#" class="w3-container w3-red w3-padding-16">
+        <a class="w3-btn w3-left" onclick="openSection('timeline')" title="Open Timeline">
+          <i class="fa fa-briefcase fa-fw w3-xxlarge"></i>
+        </a>
+        <div class="w3-right">
+          <h4>Position</h4>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>EE PhD Student</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div href="#" class="w3-container w3-blue w3-padding-16">
+        <a href="https://www.utdallas.edu/" class="w3-btn w3-left" title="UTD Website">
+          <i class="fa fa-institution fa-fw w3-xxlarge"></i>
+        </a>
+        <div class="w3-right">
+          <h4>University</h4>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>UT Dallas</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div href="#" class="w3-container w3-teal w3-padding-16">
+        <a href="https://ecs.utdallas.edu/research/researchlabs/msp-lab/" class="w3-btn w3-left" title="MSP Website">
+          <i class="fa fa-users fa-fw w3-xxlarge"></i>
+        </a>
+        <div class="w3-right">
+          <h4>Group</h4>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>MSP Laboratory</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div href="#" class="w3-container w3-orange w3-text-white w3-padding-16">
+        <a class="w3-btn w3-left" onclick="openSection('publications')" title="Open Publications">
+          <i class="fa fa-coffee fa-fw w3-xxlarge"></i>
+        </a>
+        <div class="w3-right">
+          <h4>Focus</h4>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Affective Computing</h4>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Third Grid: Swing By & Contact -->
-<div class="w3-row">
-  <div class="w3-half w3-dark-grey w3-container w3-center" style="min-height:480px" id="proj">
-    <div class="w3-padding-64 w3-center">
-      <h2><b>Projects</b></h2>
-      <div class="w3-left-align w3-padding-large">
-      	<p>Spring 2021 UTDesign Senior EXPO - Deepcut: A Robot that Raps. <a href="https://drive.google.com/file/d/1HVcR48bGuwM_DscVnjWUZmUiOCaqV-dd/view?usp=sharing" target="_blank">Final Report</a> <a href="https://www.youtube.com/watch?v=IORT4t0sRTA" target="_blank">Demo</a> <a href="https://github.com/jluckenbaugh2/Deepcut" target="_blank">GitHub Page</a></p>
-      	<p>Creating an Attention Based Network for Speech Emotion Recognition in Conversations. <a href="https://drive.google.com/file/d/14EmWQVbTw_olQYAzkVvWC_XQoDztfjf1/view?usp=sharing" target="_blank">Poster</a> <a href="https://www.youtube.com/watch?v=pk9zcknK4fg" target="_blank">Presentation Video</a></p>
-      	<p>Continuous Assessment of Emotional Speech during Spontaneous Multiple People Interaction. <a href="https://drive.google.com/file/d/1GxfAeSCTa3G1hHEPIIl-osyd2VfistSv/view?usp=sharing" target="_blank">Poster</a> <a href="https://www.youtube.com/watch?v=3Kmqi8cOWrw" target="_blank">Presentation Video</a></p>
+  <div class="w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third">
+        <h5>Hello!</h5>
+        <p>My name is Luz Martinez-Lucas and I am an Electrical Engineering PhD student at 
+        the University of Texas at Dallas. I work at the Multimodal Signal Processing Laboratory under
+        Dr. Carlos Busso. My focus right now is on affective computing, specifically on conversational
+        speech emotion recognition.</p>
+        
+        <p>My research interests include: Speech Emotion Recognition, Speaker Recognition, 
+        Machine Learning, Conversational Speech, and Speech Data Collection.</p>
       </div>
-      <a href="#home" class="w3-button w3-dark-grey w3-block w3-hover-dark-grey w3-hover-text-grey w3-padding-16"><i class="fa fa-home w3-xlarge"></i></a>
-    </div>      
-  </div>
-  <div class="w3-half w3-black w3-container" style="min-height:480px" id="contact">
-    <div class="w3-padding-64 w3-center">
-      <h2><b>Contact Details</b></h2>
-	<div class="w3-left-align w3-padding-large">
-      	  <p>University Email: Luz.Martinez-Lucas@utdallas.edu</p>
-      	  <p>Personal Email: luzmamtzl@hotmail.com</p>
-	</div>
-        <a href="#home" class="w3-button w3-black w3-block w3-hover-black w3-hover-text-grey w3-padding-16"><i class="fa fa-home w3-xlarge"></i></a>
+      <div class="w3-twothird">
+        <img src="images/me_full.JPG" class="w3-round" style="width:100%" alt="Luz at UTD">
+      </div>
     </div>
   </div>
+  <hr>
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-envelope fa-fw"></i>&nbsp Contact Me</b></h5>
+  </header>
+
+  <div class="w3-left-align w3-padding-large">
+    <p>University Email: Luz.Martinez-Lucas@utdallas.edu</p>
+    <p>Personal Email: luzmamtzl@hotmail.com</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-grey">
+    <a href="#" class="w3-btn w3-block" onclick="openSection('about')"><i class="fa fa-home w3-xlarge"></i></a>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <!-- End page content -->
 </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <p class="w3-medium"><a href="https://github.com/LuzMtzL" target="_blank">GitHub</a>  <a href="https://www.youtube.com/channel/UCs1CSxxb3iEaY_acNY_cHzQ" target="_blank">YouTube</a>  <a href="https://twitter.com/luzmamtzl3" target="_blank">Twitter</a>  <a href="https://www.instagram.com/lmlucas3/" target="_blank">Instagram</a>  <a href="https://www.linkedin.com/in/luz-martinez-lucas-a16746196/" target="_blank">LinkedIn</a></p>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+<!-- !PUBLICATIONS PAGE CONTENT! -->
+<div id="publications" class="Section" style="margin-left:300px;margin-top:43px;display:none;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-book fa-fw"></i>&nbsp Publications</b></h5>
+  </header>
+
+  <div class="w3-padding-large w3-left-align w3-text-deep-orange">
+    <h2>Journal Articles</h2>
+    <div class="w3-text-black">
+      <p>
+        L. Martinez-Lucas, W. Lin, and C. Busso, 
+        “Analyzing continuous-time and sentence-level annotations for speech emotion recognition,” 
+        <i>IEEE Transactions on Affective Computing</i>, vol. submitted, 2021.
+      </p>
+    </div>
+  </div>
+  <div class="w3-padding-large w3-left-align w3-text-deep-orange">
+    <h2>Conference Proceedings</h2>
+    <div class="w3-text-black">
+      <p>
+        L. Martinez-Lucas, M. Abdelwahab, and C. Busso, “The MSP-conversation corpus,” 
+        in <i>Interspeech 2020</i>, Shanghai, China, October 2020, pp. 1823–1827.
+        <a href="http://www.interspeech2020.org/index.php?m=content&c=index&a=show&catid=290&id=684" target="_blank">Paper</a> 
+        <a href="https://www.youtube.com/watch?v=ABVG4rXQg1k" target="_blank">Highlight Video</a> 
+        <a href="https://www.youtube.com/watch?v=73YLeButw3I" target="_blank">Presentation Video</a>
+      </p>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-grey">
+    <a href="#" class="w3-btn w3-block" onclick="openSection('about')"><i class="fa fa-home w3-xlarge"></i></a>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<!-- !TIMELINE PAGE CONTENT! -->
+<div id="timeline" class="Section" style="margin-left:300px;margin-top:43px;display:none;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-history fa-fw"></i>&nbsp Timeline</b></h5>
+  </header>
+
+  <table class="w3-table w3-striped w3-white">
+    <tr class="w3-text-deep-orange">
+      <td><i>May 2022 - Present</i></td>
+      <td><b>Student, Doctor of Philosophy in Electrical Engineering</b></td>
+      <td><i>The University of Texas at Dallas, Richardson, TX</i></td>
+    </tr>
+    <tr>
+      <td><i>May 2018 - Present</i></td>
+      <td>Machine Learning Researcher at 
+        the Multimodal Signal Processing (MSP) Laboratory</td>
+      <td><i>Laboratory at the University of Texas at Dallas</i></td>
+    </tr>
+    <tr>
+      <td><i>May 2021</i></td>
+      <td>Bachelor of Science in Electrical Engineering, 
+        GPA: 3.99/4.00, Graduated Summa Cum Laude</td>
+      <td><i>The University of Texas at Dallas, Richardson, TX</i></td>
+    </tr>
+    <tr>
+      <td><i>Apr 2021</i></td>
+      <td>Jonsson School Undergraduate Research Award</td>
+      <td><i>The University of Texas at Dallas</i></td>
+    </tr>
+    <tr>
+      <td><i>Apr 2020</i></td>
+      <td>Undergraduate Research Scholar Award</td>
+      <td><i>The University of Texas at Dallas</i></td>
+    </tr>
+    <tr>
+      <td><i>Sep 2019</i></td>
+      <td>Workshop for Young Female Researchers 
+        in Speech Science & Technology</td>
+      <td><i>Interspeech 2019 in Graz, Austria</i></td>
+    </tr>
+  </table>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-grey">
+    <a href="#" class="w3-btn w3-block" onclick="openSection('about')"><i class="fa fa-home w3-xlarge"></i></a>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<!-- !PROJECTS PAGE CONTENT! -->
+<div id="projects" class="Section" style="margin-left:300px;margin-top:43px;display:none;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-cubes fa-fw"></i>&nbsp Projects</b></h5>
+  </header>
+
+  <div class="w3-left-align w3-padding-large">
+    <ul class="w3-ul w3-card-4 w3-white">
+      <li class="w3-padding-16">
+        <img src="images/Deepcut_LOGO.png" class="w3-left w3-round w3-margin-right" style="width:35px">
+        <span class="w3-large">
+          Spring 2021 UTDesign Senior EXPO - Deepcut: A Robot that Raps
+        </span><br>
+        <span class="w3-medium"></span>
+          <a href="https://drive.google.com/file/d/1HVcR48bGuwM_DscVnjWUZmUiOCaqV-dd/view?usp=sharing" target="_blank">Final Report</a> 
+          <a href="https://www.youtube.com/watch?v=IORT4t0sRTA" target="_blank">Demo</a> 
+          <a href="https://github.com/jluckenbaugh2/Deepcut" target="_blank">GitHub Page</a>
+        </span><br>
+      </li>
+      <li class="w3-padding-16">
+        <img src="images/MSP_LOGO.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <span class="w3-large">
+          Creating an Attention Based Network for Speech Emotion Recognition in Conversations
+        </span><br>
+        <span class="w3-medium"></span>
+          <a href="https://drive.google.com/file/d/14EmWQVbTw_olQYAzkVvWC_XQoDztfjf1/view?usp=sharing" target="_blank">Poster</a> 
+          <a href="https://www.youtube.com/watch?v=pk9zcknK4fg" target="_blank">Presentation Video</a>
+        </span><br>
+      </li>
+      <li class="w3-padding-16">
+        <img src="images/MSP_LOGO.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <span class="w3-large">
+          Continuous Assessment of Emotional Speech during Spontaneous Multiple People Interaction
+        </span><br>
+        <span class="w3-medium"></span>
+          <a href="https://drive.google.com/file/d/1GxfAeSCTa3G1hHEPIIl-osyd2VfistSv/view?usp=sharing" target="_blank">Poster</a> 
+          <a href="https://www.youtube.com/watch?v=3Kmqi8cOWrw" target="_blank">Presentation Video</a>
+        </span><br>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-grey">
+    <a href="#" class="w3-btn w3-block" onclick="openSection('about')"><i class="fa fa-home w3-xlarge"></i></a>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<!-- !COURSES PAGE CONTENT! -->
+<div id="courses" class="Section" style="margin-left:300px;margin-top:43px;display:none;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-graduation-cap fa-fw"></i>&nbsp Courses</b></h5>
+  </header>
+
+  <div class="w3-padding-large">
+    COMING SOON!
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-grey">
+    <a href="#" class="w3-btn w3-block" onclick="openSection('about')"><i class="fa fa-home w3-xlarge"></i></a>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+// Function for opening sections
+function openSection(sectionName) {
+  var i;
+  var x = document.getElementsByClassName("Section");
+  var currSection = document.getElementById(sectionName)
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  currSection.style.display = "block";
+  // currSection.style.marginLeft = "300px";
+  // currSection.style.marginTop = "43px";
+}
+</script>
 
 </body>
 </html>
